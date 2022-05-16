@@ -12,9 +12,6 @@
     .titleSide{
         @apply text-sm ml-4 text-[rgb(168,168,168)] font-bold
     }
-    /* .scrollUl{
-        @apply !scrollbar-thumb-gray-400 !scrollbar-thin !scrollbar-track-transparent
-    } */
 }
 
 @layer base { 
@@ -196,7 +193,104 @@ html{
 }
 
 .title{
-   background: linear-gradient(to bottom,rgba(20,20,20,0) 0,rgba(20,20,20,.15) 15%,rgba(20,20,20,.35) 29%,rgba(20,20,20,.58) 44%,#141414 68%,#141414 100%);
+    background: linear-gradient(to bottom,rgba(20,20,20,0) 0,rgba(20,20,20,.15) 15%,rgba(20,20,20,.35) 29%,rgba(20,20,20,.58) 44%,#141414 68%,#141414 100%);
+}
+
+@media (max-width: 1536px) { 
+    .scrollContainer {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-gap: 5px;
+        max-height: 57vh;
+        overflow: hidden;
+        scroll-behavior: smooth;
+        justify-items: center;
+    }
+    .scrollUl {
+        max-height: 57vh
+    }
+    .scrollBody {
+        max-height: 57vh;
+    }
+}
+@media (max-width: 1366px) { 
+    .scrollContainer {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-gap: 5px;
+        max-height: 52vh;
+        overflow: hidden;
+        scroll-behavior: smooth;
+        justify-items: center;
+    }
+    .scrollUl {
+        max-height: 52vh
+    }
+    .scrollBody {
+        max-height: 52vh;
+    }
+}
+@media (max-width: 1280px) { 
+    .scrollContainer {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-gap: 5px;
+        max-height: 49vh;
+        overflow: hidden;
+        scroll-behavior: smooth;
+        justify-items: center;
+    }
+    .scrollUl {
+        max-height: 49vh
+    }
+    .scrollBody {
+        max-height: 49vh;
+    }
+}
+@media (max-width: 1138px) { 
+    .scrollContainer {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-gap: 5px;
+        max-height: 43vh;
+        overflow: hidden;
+        scroll-behavior: smooth;
+        justify-items: center;
+    }
+    .scrollUl {
+        max-height: 43vh
+    }
+    .scrollBody {
+        max-height: 43vh;
+    }
+}
+@media (max-width: 1024px) { 
+    .scrollContainer {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-gap: 5px;
+        max-height: 37vh;
+        overflow: hidden;
+        scroll-behavior: smooth;
+        justify-items: center;
+    }
+    .scrollUl {
+        max-height: 37vh
+    }
+    .scrollBody {
+        max-height: 37vh;
+    }
+}
+@media (max-width: 988px) { 
+    .scrollContainer {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-gap: 5px;
+        max-height: 27.8vh;
+        overflow: hidden;
+        scroll-behavior: smooth;
+        justify-items: center;
+    }
 }
 
 @media (max-width: 768px){ 
