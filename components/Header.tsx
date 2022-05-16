@@ -4,7 +4,6 @@ import Sidebar from './Sidebar'
 import { useDispatch, useSelector } from 'react-redux'
 import { handleShowSideBar, setUrl } from '../redux/actions'
 import { useRouter } from 'next/router'
-import { useParams } from 'react-router-dom'
 type sideBar = {
   sideBar: boolean
 }
