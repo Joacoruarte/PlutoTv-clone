@@ -292,7 +292,7 @@ function Scroll() {
           <li
             onClick={() => hanldeLi('Estilodevida')}
             className={`${
-              li === 'Estilo de vida' ? 'scrollSelect' : 'scroll-li'
+              li === 'Estilodevida' ? 'scrollSelect' : 'scroll-li'
             }`}
           >
             <svg
