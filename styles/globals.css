@@ -1,3 +1,206 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .sideBar-li{
+        @apply text-xs px-4 py-4 transition cursor-pointer font-bold hover:bg-[rgb(31,31,31)];
+    }
+    .ul-Side{
+        @apply flex flex-col gap-3
+    }
+    .titleSide{
+        @apply text-sm ml-4 text-[rgb(168,168,168)] font-bold
+    }
+    /* .scrollUl{
+        @apply !scrollbar-thumb-gray-400 !scrollbar-thin !scrollbar-track-transparent
+    } */
+}
+
+@layer base { 
+    body{ 
+        @apply bg-black text-white !scrollbar-thumb-gray-400 !scrollbar-thin min-h-screen
+    }
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.scrollContainer{ 
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-gap: 5px;
+    scroll-behavior: smooth;
+    justify-items: center;
+}
+
+.scrollUl::-webkit-scrollbar{
+    width: 1vw;
+}
+.scrollUl::-webkit-scrollbar-thumb{
+    background-color: #616161;
+    border-radius: 9999px;
+}
+.scrollUl::-webkit-scrollbar-track{
+    background-color: #121212;
+}
+
+.scrollUl{
+    max-height: 37vh;
+    overflow-y: scroll;
+    padding: 15px;
+    width: 100%;
+}
+
+.scrollBody{
+    width: 98%;
+    scroll-behavior: smooth;
+    padding: 10px;
+    max-height: 14.4rem;
+    overflow-y: scroll;
+}
+
+.scrollBody::-webkit-scrollbar{
+    width: 1vw;
+}
+.scrollBody::-webkit-scrollbar-thumb{
+    background-color: #616161;
+    border-radius: 9999px;
+}
+.scrollBody::-webkit-scrollbar-track{
+    background-color: #121212;
+}
+
+.video{
+    position: relative;
+    width: 100%;
+    height: 330px;
+}
+.headerDiv{
+    padding: 1rem;
+}
+
+.buttonHeader{ 
+    border: 1px solid #FFDE2B;
+    padding: 10px;
+    justify-content: center;
+}
+
+.buttonDemand{
+    padding: 10px;
+}
+
+.button-svg{
+    line-height: 13px;
+}
+
+.buttonDemand:active{ 
+    border: 1px solid #FFDE2B;
+    color: #FFDE2B;
+}
+
+.buttonOn{
+    border: 1px solid #FFDE2B;
+    color: #FFDE2B;
+    padding: 10px;
+}
+
+.tv{ 
+    line-height: 20px;
+}
+.titleSide{
+    letter-spacing: -1px;
+}
+.plutoWH{ 
+    width: 6.2rem;
+    height: 25px;
+}
+.inputSearch{ 
+    border-bottom: 2px solid gray;
+    font-size: 32px;
+    padding: 5px;
+    font-weight: 700;
+}
+
+.inputSearch:focus{ 
+   border-radius: 1000px;
+   border: 1px solid #FFDE2B;
+   padding: 5px;
+}
+
+.scroll-li{
+    display: flex;
+    gap: 0.5rem;
+    width: 80%;
+    font-size: 14px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px 1000px 1000px 3px;
+    font-weight: 500;
+}
+
+.scroll-li > .line { 
+    color: black;
+}
+
+.scroll-li:hover > .line { 
+    color: white;
+}
+
+.scrollSelect{
+    display: flex;
+    gap: 0.5rem;
+    background-color:#FFDE2B;
+    font-weight: 500;
+    color: black;
+    width: 80%;
+    font-size: 14px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px 1000px 1000px 3px;
+}
+.scrollSelect > svg:first-child { 
+    color: #FFDE2B;
+}
+
+.scrollSelect:hover > svg { 
+    color: black
+}
+
+.scrollSelect:hover{
+    background-color: #BFA620;
+}
+
+.scroll-li:hover{
+    background-color: #2c2c2c;
+}
+
+.scrollBodyTv{
+    display: grid;
+    grid-template-columns: 5% 20% 75%;
+    grid-column-gap: 0.3rem;
+    grid-row-gap: 0.3rem;
+    margin-top: 1rem;
+    width: 90%;
+}
+
+.scroollBodyTvDiv{
+    display: flex;
+    width: 100%;
+    background-color: #151515; 
+    text-align: center;
+    height: 75px;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+   background: linear-gradient(to bottom,rgba(20,20,20,0) 0,rgba(20,20,20,.15) 15%,rgba(20,20,20,.35) 29%,rgba(20,20,20,.58) 44%,#141414 68%,#141414 100%);
+}
+
+@media (max-width: 768px){ 
+    .width-Sidebar{
+        width: 100%;
+    }
+}
