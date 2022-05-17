@@ -16,7 +16,10 @@ function onDemand() {
           <button className="mt-2 h-8 w-20 rounded-lg bg-[#FFDE2B] p-2 font-semibold leading-4 text-black">
             Detalles
           </button>
-          <div className="m-3 flex w-[100%] items-center justify-center gap-4" style={{height: "inherit"}}>
+          <div
+            className="m-3 flex w-[100%] items-center justify-center gap-4"
+            style={{ height: 'inherit' }}
+          >
             <button>
               <FaCircle />
             </button>
@@ -32,6 +35,16 @@ function onDemand() {
           <img src="/3chiflados.jpg" className="slide-img z-40 " />
           <img src="/love.jpg" className="slide-img z-30" />
           <img src="/sonic.jpg" className="slide-img z-20 " />
+        </div>
+      </div>
+      <div className="scrollContainer mt-2">
+        <div className="scrollUl text-[gray]">
+          <h1>titulos proximamente...</h1>
+          <p className='mb-[500px]'></p>
+        </div>
+        <div className="scrollBody text-[gray]">
+          <h1>peliculas proximamente...</h1>
+          <p className='mb-[500px]'></p>
         </div>
       </div>
     </div>
