@@ -24,6 +24,10 @@ html{
     scroll-behavior: smooth;
 }
 
+.up{
+    z-index: 9999;
+}
+
 .scrollContainer{ 
     display: grid;
     grid-template-columns: 30% 70%;
