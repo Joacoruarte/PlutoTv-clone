@@ -18,7 +18,7 @@ function Sidebar() {
     <div
       className={`${
         sidebar
-          ? 'absolute top-0 left-0 !z-40 h-screen w-screen bg-[rgba(0,0,0,0.5)]'
+          ? 'absolute top-0 left-0 !z-60 h-screen w-screen bg-[rgba(0,0,0,0.5)]'
           : 'absolute top-0 left-0 hidden h-screen w-80'
       }`}
     >
